@@ -1,12 +1,84 @@
-# React + Vite
+#Realtime Chat App (Socket.IO, React, Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A real-time chat application** built with React, Vite, and Socket.IO, featuring authentication, multiple rooms, message history, and a Frutiger Aero-inspired user interface.
 
-Currently, two official plugins are available:
+## Features
+- ### User Authentication
+  - Register and login with username and password.
+  - JWT-based authentication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ### Realtime Chat
+  - Messages sent and received in real-time.
+  - Users join specific chat rooms.
+  - Message history (last 100 messages per room).
 
-## Expanding the ESLint configuration
+- ### Rooms
+  - Create new chat rooms.
+  - Switch between existing rooms.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ### Logout
+  - Securely log out and return to login screen.
+
+- ### Stylish UI
+  - Frutiger Aero inspired: gradients, glassy panels, rounded buttons.
+  - Responsive and clean design.
+
+
+### Technologies Used
+- Frontend
+- React 18
+- Vite
+- TailwindCSS
+- Axios
+- Socket.IO Client
+
+### Backend
+- Node.js
+- Express
+- Socket.IO
+- JSON Web Token (JWT)
+- Cors
+
+## Installation
+### 1. Clone the repository
+`git clone https://github.com/yourusername/chat-app.git`
+`cd chat-app`
+
+### 2. Start the server
+`cd server`
+`npm install`
+`node index.js`
+
+
+The server will run on http://localhost:4000
+
+### 3. Start the client
+`cd client`
+`npm install`
+`npm run dev`
+
+
+The client will run on http://localhost:5173
+ (Vite default).
+
+## Usage
+1. Open the client in your browser: http://localhost:5173
+2. Register a new account or log in.
+3. Join the default general room or create a new room.
+4. Send and receive messages in real-time.
+5. Use the Logout button to exit securely.
+
+## Notes
+
+This project uses an in-memory database (for users and messages).
+All data is lost when the server restarts. For production, connect a database like MongoDB or PostgreSQL.
+
+JWT secret is set in the code (dev-secret-please-change) for development. Use environment variables in production.
+
+
+Screenshots
+
+
+License
+
+MIT License © 2025 Volodymyr Artemenko
