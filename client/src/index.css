@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-gradient-to-br from-sky-200 via-cyan-300 to-emerald-200 text-gray-900;
+    font-family: 'Segoe UI', sans-serif;
+}
