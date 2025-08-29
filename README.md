@@ -1,4 +1,4 @@
-#Realtime Chat App (Socket.IO, React, Vite)
+# Realtime Chat App (Socket.IO, React, Vite)
 
 **A real-time chat application** built with React, Vite, and Socket.IO, featuring authentication, multiple rooms, message history, and a Frutiger Aero-inspired user interface.
 
